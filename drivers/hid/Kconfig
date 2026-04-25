@@ -1131,6 +1131,12 @@ config HID_SPEEDLINK
 	help
 	Support for Speedlink Vicious and Divine Cezanne mouse.
 
+config HID_UCIS
+	tristate "Univeral Controller Input support"
+	select POWER_SUPPLY
+	help
+	Say Y here if you want to support the Universal Controll Input Specification
+
 config HID_STEAM
 	tristate "Steam Controller/Deck support"
 	select POWER_SUPPLY
